@@ -15,9 +15,12 @@ public class Hover {
     }
 
     public String testHover() {
+        //Hover test
         Actions builder = new Actions(driver);
+        //Xpath
         WebElement we = driver.findElement(By.xpath("//*[@id=\"primary-menu-bar\"]/nav/ul/li[4]/a"));
         builder.moveToElement(we).perform();
+        //xpath
         String text = driver.findElement(By.xpath("//*[@id=\"menu-tab-view119\"]/a")).getText();
         return text;
     }

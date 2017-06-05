@@ -11,8 +11,9 @@ public class Goback {
     public Goback(WebDriver driver) {
         this.driver = driver;
     }
-
+     // history Go back test
     public String goBack() {
+        //Xpath
         driver.findElement(By.xpath(".//*[@id='page']/header/div/div/div/div[3]/nav/a[1]")).click();
         driver.navigate().back();
         String title = driver.getTitle().toString();
