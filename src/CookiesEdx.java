@@ -16,7 +16,7 @@ public class CookiesEdx {
     }
      // cookies manuplation create a cookie and ten delete it
     public boolean cookiesCheck() {
-        Cookie name = new Cookie("cookiessample", "12345");
+        Cookie name = new Cookie("cookiessample", "123456");
         driver.manage().addCookie(name);
         Cookie cookies= driver.manage().getCookieNamed("cookiessample");
         if(cookies != null) {
